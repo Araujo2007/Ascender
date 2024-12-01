@@ -1,0 +1,87 @@
+/* Estilo base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #123875;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+/* Logo */
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin: auto;
+}
+
+/* Links */
+.nav-links a{
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.link-login{
+    color: white;
+}
+
+.link-cadastro{
+    color: white;
+    background-color: #123875;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.link-cadastro:hover{
+    background-color: white;
+    color: #123875;
+}
+#container{
+    column-count: 2;
+    background-color: #123875;
+    height: 600px;
+}
+
+.img-banner{
+    height: 600px;
+}
+
+.texto-banner{
+    color: white;
+    height: 500px;
+    width: auto;
+    font-size: 40px;
+    margin: 20px;
+}
+
+h3{
+  color: #123875;
+}
+
+.container2{
+  column-count: 2;
+  height: 300px;
+}
+
+.img-informacoes{
+  height: 300px;
+}
+
+.texto-informacoes{
+  color: #123875;
+  font-size: 20px;
+  margin: 100px;
+  text-align: center;
+}

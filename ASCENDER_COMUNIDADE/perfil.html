@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Ascender</title>
+    <link rel="shortcut icon" href="img/logotittle.png">
+    <script src="ascender.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="#"><img src="img/logoNav.png" alt="Logo" class="logo-img"></a>
+        </div>
+        <div class="nav-links">
+          <input type="button" class="deslogar" onclick="deslogar()" value="Deslogar">
+          <a class="link-home" href="carreiras.html" >Carreiras</a>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div class="userDados">
+            <div class="dados">
+                <h2>Minhas Informações</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVq8p8mw1eHWNtR4phRv2_3AcvHDeHGaAnFWUryuXraO3nNbqcdNFeM9zMFQcLJSsWlJc&usqp=CAU" alt="" class="img-user">
+                <h4 id="userLogado"></h4>
+                <p id="idadeUser"></p>
+                <p id="areaUser"></p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Adicionar Publicação</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+          
+              <div class="form-group">
+                <label for="image">Imagem (link):</label>
+                <input type="text" id="link-img-publicacao" name="link-img" required>
+              </div>
+
+              <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="namePublicacao" name="name" placeholder="Digite o nome" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="market-area">Área do Mercado:</label>
+                <select id="market-area" name="market-area" required>
+                  <option value="">Selecione uma área</option>
+                      <option value="Saúde">Saúde e Bem-Estar</option>
+                      <option value="Educação">Educação</option>
+                      <option value="Tecnologia">Tecnologia da Informação</option>
+                      <option value="Engenharia">Engenharia e Construção</option>
+                      <option value="Negócios">Negócios e Administração</option>
+                      <option value="Artes">Artes e Design</option>
+                      <option value="Direito">Direito e Políticas Públicas</option>
+                      <option value="Comunicação">Comunicação e Mídia</option>
+                      <option value="Turismo">Turismo e Hospitalidade</option>
+                      <option value="Indústria">Indústria e Manufatura</option>
+                      <option value="Ciências">Ciências e Meio Ambiente</option>
+                      <option value="Segurança">Segurança e Defesa</option>
+                      <option value="Transportes">Transportes e Logística</option>
+                      <option value="Empreendedorismo">Empreendedorismo e Startups</option>
+                      <option value="Criativos">Setores Criativos e Culturais</option>
+                </select>
+              </div>
+           
+              <input type="button" class="addPublicacao" onclick="ADDpublicacao()" value="Adicionar Publicação">
+            </form>
+          </div>
+    </div>
+    <div class="publiEadd">
+        <h3>Minhas Publicações</h3>
+    <div class="carousel-container">
+        <div class="carousel-track" id="carousel-userPublicacoes">
+          
+        </div>
+    
+        <div class="carousel-buttons">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+      </div>
+    </div>
+    <br>
+</body>
+</html>

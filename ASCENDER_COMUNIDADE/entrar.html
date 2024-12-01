@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascender</title>
+    <link rel="shortcut icon" href="img/logotittle.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="ascender.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img class="img-banner" src="img/bannerLogin.png" alt="">
+        </div>
+        <div class="form">
+            <br><br><br>
+            <h2>Descubra o amanhã!</h2>
+            <br>
+            <form action="">
+                <br>
+                <label for="name">Nome Completo:</label>
+                <br>
+                <input class="dados" type="text" id="nome" name="nome" required>
+                <br><br>
+                <label for="username">CPF:</label>
+                <br>
+                <input class="dados" type="text" id="cpf" name="cpf" pattern="\d{11}" title="Digite 11 números." required>
+                <br><br>
+                <label for="senha">Senha</label>
+                <br>
+                <input class="dados" type="password" id="senha" name="senha" required>
+                <br><br>
+                <input class="botao-login" type="button" value="Entrar" onclick="entrar()">
+                <br>
+                <a class="jaPossui" href="cadastro.html">Não possui cadastro?</a>
+                <br>
+            </form>
+        </div>
+      </div>
+</body>
+</html>

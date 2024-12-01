@@ -1,0 +1,58 @@
+body{
+    background-color: #123875;
+}
+
+#container{
+    column-count: 2;
+    height: 600px;
+    background-color: white;
+    margin: 40px;
+}
+
+.img-banner{
+    height: 600px;
+}
+
+.form{
+    color: #123875;
+    text-align: center;
+    font-size: 20px;
+}
+
+form{
+    border: #123875 solid 2px;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.dados{
+    width: 80%;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: #123875 solid 1px;
+    margin: 5px;
+}
+
+.botao-login{
+    width: 100px;
+    font-size: 20px;
+    background-color: #123875;
+    color: white;
+    border: #123875 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.botao-login:hover{
+    background-color: white;
+    color: #123875;
+    border: #123875 solid 1px;
+}
+
+.jaPossui{
+    color: #123875;
+    text-decoration: none;
+    font-size: 15px;
+}

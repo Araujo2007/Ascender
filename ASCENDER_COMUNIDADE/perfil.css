@@ -1,0 +1,229 @@
+/* Estilo base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #123875;
+    padding: 10px 20px;
+    height: 60px;
+  }
+  
+  /* Logo */
+  .logo-img {
+    height: 60px;
+    width: auto;
+    margin: auto;
+  }
+  
+  /* Links */
+  .nav-links a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+    color: white;
+  }
+
+.deslogar{
+  margin-left: 20px;
+  font-size: 18px;
+  color: #123875;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.deslogar:hover{
+  color: white;
+  background-color: #123875;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.link-home:hover{
+    background-color: white;
+    color: #123875;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#container{
+    margin: 20px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dados{
+    border: #123875 solid 2px;
+    width: 500px;
+    margin: 20px;
+}
+
+.img-user{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    border: solid #123875 5px;
+}
+
+/* adicionar publicação */
+
+.form-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: 20px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input[type="text"] {
+  padding: 3px;
+}
+
+.checkbox-group {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.addPublicacao {
+  background-color:#123875;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 40%;
+}
+
+.addPublicacao:hover {
+  background-color:#123875da;
+}
+
+.carousel-container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  background-color:#123875;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 250px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 5px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 14px;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.carousel-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  pointer-events: all;
+}
+
+.carousel-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}

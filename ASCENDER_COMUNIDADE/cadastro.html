@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascender</title>
+    <link rel="shortcut icon" href="img/logotittle.png">
+    <link rel="stylesheet" href="login.css">
+    <script src="ascender.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img class="img-banner" src="img/bannerLogin.png" alt="">
+        </div>
+        <div class="form">
+            <br>
+            <h2>Descubra o amanhã!</h2>
+            <form action="">
+                <br>
+                <label for="name">Nome Completo:</label>
+                <br>
+                <input class="dados" type="text" id="nome" name="nome" required>
+                <br>
+                <label for="cpf">CPF:</label>
+                <br>
+                <input class="dados" type="text" id="cpf" name="cpf" pattern="\d{11}" required>
+                <br>
+                <label for="data">Data de Nascimento:</label>
+                <br>
+                <input class="dados" type="date" id="data" name="data" required>
+                <br>
+                <label for="senha">Senha</label>
+                <br>
+                <input class="dados" type="password" id="senha" name="senha" required>
+                <br>
+                <label for="senha2">Confirmar Senha</label>
+                <br>
+                <input class="dados" type="password" id="senha2" name="senha2" required>
+                <br><br>
+                <div class="form-group">
+                    <label for="market-area">Área do Mercado:</label>
+                    <select id="market-area" name="market-area" required>
+                      <option value="">Selecione uma área</option>
+                      <option value="Saúde">Saúde e Bem-Estar</option>
+                      <option value="Educação">Educação</option>
+                      <option value="Tecnologia">Tecnologia da Informação</option>
+                      <option value="Engenharia">Engenharia e Construção</option>
+                      <option value="Negócios">Negócios e Administração</option>
+                      <option value="Artes">Artes e Design</option>
+                      <option value="Direito">Direito e Políticas Públicas</option>
+                      <option value="Comunicação">Comunicação e Mídia</option>
+                      <option value="Turismo">Turismo e Hospitalidade</option>
+                      <option value="Indústria">Indústria e Manufatura</option>
+                      <option value="Ciências">Ciências e Meio Ambiente</option>
+                      <option value="Segurança">Segurança e Defesa</option>
+                      <option value="Transportes">Transportes e Logística</option>
+                      <option value="Empreendedorismo">Empreendedorismo e Startups</option>
+                      <option value="Criativos">Setores Criativos e Culturais</option>
+                    </select>
+                </div>
+                <br><br>
+                <input class="botao-login" type="button" value="Cadastrar" onclick="cadastrar()">
+                <a class="jaPossui" href="entrar.html">Já possui cadastro?</a>
+                <br>
+            </form>
+        </div>
+      </div>
+</body>
+</html>
